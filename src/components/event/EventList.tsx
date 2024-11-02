@@ -1,32 +1,26 @@
-import { useEffect, useState } from "react";
-import EventCard from "./EventCard"
-import { Event } from "../../types/Event";
-import { getAllEvents } from "../../services/EventService";
+import EventCard from "./EventCard";
+import { useEvents } from "../../hooks/use-events";
 
 interface EventListProps {
-    setActiveEventId: React.Dispatch<React.SetStateAction<string>>
+  setActiveEventId: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const EventList: React.FC<EventListProps> = ({ setActiveEventId: setActiveEvent }) => {
-    const [events, setEvents] = useState<Event[]>([]);
+const EventList: React.FC<EventListProps> = ({
+  setActiveEventId: setActiveEvent,
+}) => {
+  const events = useEvents();
 
-    useEffect(() => {
-        const fetchEvents = async () => {
-            const eventsData = await getAllEvents();
-            setEvents(eventsData);
-        };
+  return (
+    <>
+      {events.map((event, index) => (
+        <EventCard
+          key={index}
+          {...event}
+          onClick={() => setActiveEvent(event.id)}
+        />
+      ))}
+    </>
+  );
+};
 
-        fetchEvents();
-    }, []);
-
-    return (
-        <>
-            {events.map((event, index) => (
-                <EventCard key={index} {...event} onClick={() => setActiveEvent(event.id)}
-                />
-            ))}
-        </>
-    )
-}
-
-export default EventList
+export default EventList;
