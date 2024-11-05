@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        robotoSlab: ['Roboto Slab', 'serif'],
+      },
+      colors: {
+        karcis: {
+          blue: '#4E4CEF',
+          lightblue: '#DADAFC',
+          black: '#1B1B25',
+          lightgray: '#DDDDDF'
+        }
+      },
+    },
   },
   plugins: [],
 }
