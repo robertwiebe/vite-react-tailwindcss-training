@@ -1,0 +1,68 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "date": "2023-09-20T00:00:00Z",
+      "contentType": "Movie",
+      "eventType": "Drive In",
+      "title": "Inception",
+      "summary": "A mind-bending thriller by Christopher Nolan.",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "timeStart": "2023-09-20T20:00:00Z",
+      "timeEnd": "2023-09-20T22:30:00Z",
+      "ageRequirement": "12",
+      "priceFrom": "€8.23",
+      "priceTo": "€12.23",
+      "location": "Senayan Park",
+      "img": "https://picsum.photos/id/742/2048"
+    },
+    {
+      "id": "2",
+      "date": "2023-09-21T00:00:00Z",
+      "contentType": "TV-show",
+      "eventType": "Cinema",
+      "title": "Breaking Bad",
+      "summary": "A high school chemistry teacher turned methamphetamine producer.",
+      "description": "A high school chemistry teacher turned methamphetamine producer partners with a former student to create and distribute the drug.",
+      "timeStart": "2023-09-21T18:00:00Z",
+      "timeEnd": "2023-09-21T20:00:00Z",
+      "ageRequirement": "18",
+      "priceFrom": "€10.00",
+      "priceTo": "€15.00",
+      "location": "Central Cinema",
+      "img": "https://picsum.photos/id/741/2048"
+    },
+    {
+      "id": "3",
+      "date": "2023-09-22T00:00:00Z",
+      "contentType": "Sports-event",
+      "eventType": "Drive In",
+      "title": "Champions League Final",
+      "summary": "The biggest match in European club football.",
+      "description": "Watch the two best teams in Europe battle it out for the Champions League trophy.",
+      "timeStart": "2023-09-22T19:00:00Z",
+      "timeEnd": "2023-09-22T21:00:00Z",
+      "ageRequirement": "3",
+      "priceFrom": "€20.00",
+      "priceTo": "€50.00",
+      "location": "National Stadium",
+      "img": "https://picsum.photos/id/363/2048"
+    },
+    {
+      "id": "4",
+      "date": "2023-09-23T00:00:00Z",
+      "contentType": "Movie",
+      "eventType": "Cinema",
+      "title": "The Matrix",
+      "summary": "A computer hacker learns about the true nature of reality.",
+      "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "timeStart": "2023-09-23T20:00:00Z",
+      "timeEnd": "2023-09-23T22:30:00Z",
+      "ageRequirement": "15",
+      "priceFrom": "€9.00",
+      "priceTo": "€13.00",
+      "location": "Downtown Cinema",
+      "img": "https://picsum.photos/id/312/2048"
+    }
+  ]
+}
